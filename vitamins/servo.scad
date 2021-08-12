@@ -13,6 +13,7 @@ function servo_column_radius(spec) = servo_base_dim_y(spec) / 2;
 function servo_column_height(spec) = spec[2];
 function servo_axiel_radius(spec) = spec[3];
 function servo_axiel_height(spec) = spec[4];
+function servo_axiel_offset(spec) = [servo_base_dim_x(spec) - servo_base_dim_y(spec) / 2, servo_base_dim_y(spec) / 2];
 function servo_screw_hole_radius(spec) = spec[5];
 // function servo_screw_hole_distance(spec) = spec[6];
 function servo_screw_hole_positions(spec) = [[servo_base_dim_x(spec) / 2 - 13.75, servo_base_dim_y(spec) / 2], [servo_base_dim_x(spec) / 2 + 13.75, servo_base_dim_y(spec) / 2]];
